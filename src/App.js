@@ -34,15 +34,14 @@ export default () => {
     const scrollListener = () => {
       if(window.scrollY > 10) {
         setBlackHeader(true);
+
       } else {
         setBlackHeader(false);
+
       }
     }
 
     window.addEventListener('scroll', scrollListener);
-    return () => {
-      window.removeEventListener('scroll', scrollListener);
-    }
 
   }, []);
 
@@ -62,6 +61,11 @@ export default () => {
 
       </section>
       
+      <footer>
+        Direitos de imagem para Netflix <br/>
+        Dados pegos do site themoviedb.org <br/>
+        Feito por MarceloLimaCodes
+      </footer>
     </div>
   );
 }
