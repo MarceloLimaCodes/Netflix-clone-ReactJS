@@ -100,8 +100,7 @@
 
     .featured--description {
         font-size: 14px;
-        max-width: 100%;
-        margin-right: 30px;
+        max-width: 90%;
     }
 
     .featured--mylistbutton, .featured--watchbutton {
