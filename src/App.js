@@ -19,7 +19,7 @@ export default () => {
 
       //Pegando o Featured
       let originals = list.filter(i => i.slug === 'originals');
-      let ramdonChosen = Math.floor(Math.random() * (originals[0].items.results.length));
+      let ramdonChosen = Math.floor(Math.random() * originals[0].items.results.length);
       let chosen = originals[0].items.results[ramdonChosen];
       let chosenInfo = await Tmdb.getMovieInfo(chosen.id, 'tv');
       setFeaturedData(chosenInfo);
