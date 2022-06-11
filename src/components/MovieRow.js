@@ -12,7 +12,6 @@ export default ({title, items}) => {
             x = 0;
         }
         setScrollX(x);
-        console.log(x)
     }
 
     const handleRight = () => {
@@ -22,7 +21,6 @@ export default ({title, items}) => {
             x = (window.innerWidth - listW) - 60;
         }
         setScrollX(x);
-        console.log(x)
     }
 
     return (
